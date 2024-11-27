@@ -1,10 +1,18 @@
 ---
 import Layout from '../components/Layout.astro';
 import FeedbackForm from '../components/FeedbackForm.astro';
+
+const responsePorto = await fetch(
+   "https://www.esky.pt/api/v1.0/deals.json?partner_id=AFFISEEU&dci=OPO&Filter[0][Type]=DepartureCity&Filter[0][Code]=OPO&f[0][t]=dci&f[0][c]=OPO&l=5"
+);
+
+
+const porto = await responsePorto.json();
 ---
 
 <Layout title="Astro Toolbox">
   <main>
+<Fragment set:html={responsePorto.deals} />
     <div class="header">
       <div class="logo">
         <img
