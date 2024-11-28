@@ -22,6 +22,14 @@ const porto = await responsePorto.json();
       </div>
     </div>
     <div class="intro">
+teste
+ {
+        porto.map((item) => (
+            <a href={item.deals.url}>{item.deals.url}</a>
+        ))
+        }
+<Fragment set:html={responsePorto.deals} />
+
       <p>
         Hi 👋! This template gives you an
         <a href="https://astro.build/">Astro</a> app with the scaffolding for
