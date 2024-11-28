@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^5.5.4",
+    "@netlify/edge-functions": "^2.11.1",
     "astro": "^4.5.18",
     "cypress": "^13.7.2"
   }
