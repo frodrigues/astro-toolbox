@@ -19,6 +19,7 @@
     "typescript": "^5.4.4"
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.5.4",
     "astro": "^4.5.18",
     "cypress": "^13.7.2"
   }
